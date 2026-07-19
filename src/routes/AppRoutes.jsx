@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Mood from "./pages/Mood";
 import Post from "./pages/Post"
 import Feed from "./pages/Feed";
-import FeedInterection from "./pages/FeedInterection";
+
 
 
 function AppRoutes() {
@@ -18,7 +18,6 @@ function AppRoutes() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/mood/post" element={<Post />} />
         <Route path="/mood/feed" element={<Feed />} />
-        <Route path="/mood/reaction" element={<FeedInterection />} />
       </Routes>
     </BrowserRouter>
   );
