@@ -19,7 +19,7 @@ function AppRoutes() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/mood/post" element={<Post />} />
         <Route path="/mood/feed" element={<Feed />} />
-         <Route path="/mood/chat" element={<Chat />} />
+        <Route path="/mood/chat" element={<Chat />} />
       </Routes>
     </BrowserRouter>
   );

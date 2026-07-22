@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import { CiCloudOn} from "react-icons/ci";
 import { VscGitPullRequestGoToChanges } from "react-icons/vsc";
 import { TfiGallery } from "react-icons/tfi";
@@ -6,9 +7,11 @@ import { IoChatboxOutline } from "react-icons/io5";
 import { RiHome9Line } from "react-icons/ri";
 import { FaPlus } from "react-icons/fa";
 
+
 import NavButton from './UI/NavButton';
 
 function SideBar({setInterecting}) {
+    const navigate = useNavigate()
   return (
     <div className='bg-white/5  w-1/3 mr-8 h-screen flex flex-col p-4 text-start justify-between pb-16'>
         <div className="">
@@ -27,13 +30,13 @@ function SideBar({setInterecting}) {
                 icon={RiHome9Line}
                 label="Home"
                 active
-                onClick={() => console.log("Home")}
+                onClick={() => navigate('/mood/feed')}
             />
 
             <NavButton
                 icon={IoChatboxOutline}
                 label="Chats"
-                onClick={() => console.log("Chats")}
+                onClick={() => navigate('/mood/chat')}
             />
 
             <NavButton
